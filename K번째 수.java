@@ -17,7 +17,7 @@ public class solution {
 			int temp = 0;
 			for (int s = i - 1; s < j; s++)
 				test[temp++] = array[s];
-			Arrays.sort(test);
+			Arrays.sort(test); //sort해주는거를 바로위의 for문에 해서 오류가 계속 발생했음.
 			answer[t] = test[k - 1];// array에서 ij에 해당하는 k번재 수를 이제 구하면 됨
 		} // 첫번재 for문 끝
 		return answer;
